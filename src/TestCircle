@@ -1,0 +1,14 @@
+import main.sbt.Circle;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class TestCircle {
+
+    @Test
+    public void testCalculateArea() throws Exception {
+        double r = 0.9;
+        Circle circle = new Circle(r);
+        assertEquals(Math.PI*r*r, circle.area(), 0.01);
+    }
+}
